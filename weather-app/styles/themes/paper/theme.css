@@ -1,0 +1,45 @@
+#weather-icon {
+  background: url(https://i.imgur.com/XYuiquT.png);
+}
+
+#weather-icon.clear {
+  background-position: -20px 0px;
+  width: 201px;
+  height: 198px;
+}
+
+#weather-icon.thunderstorm {
+  background-position: -788px -256px;
+  width: 213px;
+  height: 184px;
+}
+
+#weather-icon.drizzle {
+  background-position: -3px -259px;
+  width: 214px;
+  height: 177px;
+}
+
+#weather-icon.rain {
+  background-position: -527px -260px;
+  width: 214px;
+  height: 175px;
+}
+
+#weather-icon.snow {
+  background-position: -266px -507px;
+  width: 214px;
+  height: 178px;
+}
+
+#weather-icon.atmosphere {
+  background-position: -1064px -509px;
+  width: 214px;
+  height: 174px;
+}
+
+#weather-icon.clouds {
+  background-position: -1021px -30px;
+  width: 248px;
+  height: 137px;
+}

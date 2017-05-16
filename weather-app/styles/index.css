@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+
+html, body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  background: #373F51;
+  color: #E6E8E6;
+  font-family: 'Dosis', sans-serif;
+}
+
+.container-fluid {
+  padding: 15px;
+}
+
+#main {
+  background: none;
+  /*border: solid 1px;*/
+}
+
+#weather-icon {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+}
+
+#location {
+  display: inline-block;
+  border-bottom: solid 3px #CED0CE;
+}
+
+#weather-name {
+  display: inline;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+/* SETTINGS PAGE */
+.modal-content {
+  background: #58A4B0;
+}
+
+.modal-content a {
+  color: #F5F977;
+}
+
+button {
+  background: #58A4B0;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 17px;
+  vertical-align: middle;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 34px;
+  background-color: #2196F3;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 13px;
+  width: 13px;
+  left: 2px;
+  bottom: 2px;
+  border-radius: 50%;
+  background-color: white;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(13px);
+  -ms-transform: translateX(13px);
+  transform: translateX(13px);
+}

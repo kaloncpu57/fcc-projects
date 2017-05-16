@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FCC Weather App</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link id="theme-sheet" rel="stylesheet" href="styles/themes/paper/theme.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="scripts/weatherAPI.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="main" class="jumbotron text-center">
+      <div class="row">
+        <button class="btn btn-lg pull-right" data-toggle="modal" data-target="#settings">Settings</button>
+      </div>
+      <h1 id="location"></h1>
+      <h1 id="temperature"></h1>
+      <div id="weather-icon"></div>
+      <h2 id="weather-name"></h2>
+    </div>
+  </div>
+
+  <div id="settings" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <div class="modal-content">
+        <div class="modal-header">
+          <button class="close" data-dismiss="modal">&times;</button>
+          <h2 class="modal-title">Settings and Info</h2>
+        </div>
+        <div class="modal-body">
+          <h3>Units</h3>
+          <span>Metric</span>
+          <label class="switch">
+            <input type="checkbox" id="units-switch">
+            <div class="slider"></div>
+          </label>
+          <span>US Standard</span>
+          <hr/>
+          <p>Themes coming soon...</p>
+        </div>
+        <div class="modal-footer">
+          <p>
+            Weather app created by <a href="https://github.com/kaloncpu57">kaloncpu57</a>
+            <br/>
+            Weather data provided by <a href="http://openweathermap.org/">OpenWeatherMap</a>
+            <br/>
+            Location info provided by <a href="http://ipinfo.io/">http://ipinfo.io/</a>
+          </p>
+          <button class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="scripts/index.js"></script>
+</body>
+</html>
